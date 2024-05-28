@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,9 +21,91 @@
 <body>
     <h1>Current Weather in London</h1>
     <div id="weather-container">
-        <!-- Weather info will be inserted here -->
     </div>
 
     <script src="weather.js"></script>
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #4A90E2;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .weather-card {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .forecast {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 5px;
+        }
+
+        .temperature {
+            font-size: 64px;
+            font-weight: bold;
+        }
+
+        .day {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .small-text {
+            font-size: 14px;
+        }
+
+        .hourly-forecast .col {
+            padding: 10px 5px;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hourly-forecast .col:last-child {
+            border-right: none;
+        }
+
+        .hourly-forecast img {
+            width: 30px;
+        }
+
+        .forecast img {
+            width: 40px;
+        }
+
+        .nav-link.active {
+            color: #4A90E2 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="weather-container" class="weather-card text-center">
+            <!-- Weather information will be injected here by JavaScript -->
+        </div>
+    </div>
+
+
+    <script src="weather.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
